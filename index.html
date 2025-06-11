@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lasya's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      background: linear-gradient(135deg, #f8b8d8, #b8d6ff, #b4a5ff);
+      background-size: 400% 400%;
+      animation: gradientFlow 15s ease infinite;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4a004e;
+      position: relative;
+    }
+
+    @keyframes gradientFlow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .waves {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .glass-card {
+      width: 80%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      text-align: center;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    .glass-card h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .glass-card p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .glass-card a {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 30px;
+      background-color: #d1a4ff;
+      text-decoration: none;
+      color: #4a004e;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .glass-card a:hover {
+      background-color: #c088ff;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Waves Background -->
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#b4a5ff" fill-opacity="1" d="M0,96L60,112C120,128,240,160,360,170.7C480,181,600,171,720,160C840,149,960,139,1080,144C1200,149,1320,171,1380,181.3L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+  </svg>
+
+  <div class="glass-card">
+    <h1>Hi, I'm Lasya 👋</h1>
+    <p>A passionate <strong>UI/UX Designer</strong> & <strong>Frontend Developer</strong> crafting elegant, user-friendly interfaces.</p>
+   <div style="margin-top: 20px;">
+  <a href="designs.html">View My Designs</a><br><br>
+  <a href="dev.html">View My Development Work</a>
+</div>
+
+
+  </div>
+
+</body>
+</html>
+

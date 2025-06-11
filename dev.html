@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lasya's Development Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Same style from designs.html reused */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      color: #4a004e;
+      background: linear-gradient(to bottom right, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .waves {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 30px;
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(209, 164, 255, 0.3);
+      backdrop-filter: blur(14px);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      padding: 8px 16px;
+      display: inline-block;
+      border-radius: 10px;
+      color: #4a004e;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      color: #4a004e;
+      font-weight: 600;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Waves Background -->
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#a18cd1" fill-opacity="1" d="M0,128L60,122.7C120,117,240,107,360,112C480,117,600,139,720,165.3C840,192,960,224,1080,240C1200,256,1320,256,1380,256L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+  </svg>
+
+  <header>
+    <h1>My Development Projects</h1>
+  </header>
+
+  <section class="section">
+    <div class="cards">
+
+  <div class="card">
+    <h3>NutriScanner 🍎</h3>
+    <p><strong>Purpose:</strong> This smart nutrition assistant suggests diet plans based on user health conditions like diabetes, heart issues, allergies, etc.</p>
+    <p><strong>How to Use:</strong> Select your health conditions using the checkboxes, then submit. The app will show recommended foods tailored to your selections.</p>
+    <p><strong>Goal:</strong> Helps users stay healthy with simple, condition-aware suggestions.</p>
+    <a href="https://lasyaaa.github.io/NutriScanner/" target="_blank">Try NutriScanner</a>
+  </div>
+
+  <div class="card">
+    <h3>AURA Chatbot 💬</h3>
+    <p><strong>Purpose:</strong> A chatbot UI that simulates intelligent conversation. Built to show how a lightweight frontend-only bot works.</p>
+    <p><strong>How to Use:</strong> Type your query (e.g., “Hi”, “What can you do?”) and see how the bot responds. Great for testing basic bot logic.</p>
+    <p><strong>Goal:</strong> Create a base chatbot structure using only HTML, CSS, and JS.</p>
+    <a href="https://lasyaaa.github.io/AURA-chatbot/" target="_blank">Chat with AURA</a>
+  </div>
+
+  <div class="card">
+    <h3>Event Management System 📅</h3>
+    <p><strong>Purpose:</strong> A platform to manage college or club events. Users can register and view upcoming event details easily.</p>
+    <p><strong>How to Use:</strong> Browse through the events, click on a card to see full details, and register via the form below.</p>
+    <p><strong>Goal:</strong> Streamline how small institutions list and handle events.</p>
+    <a href="https://lasyaaa.github.io/eventmanagement/" target="_blank">Explore Events</a>
+  </div>
+
+</div>
+
+  </section>
+
+  <footer>
+    <p>More development work coming soon 👩‍💻</p>
+    <p>Contact: lasya1626@gmail.com</p>
+  </footer>
+
+</body>
+</html>
